@@ -28,7 +28,7 @@ Public datasets are identified in Supplementary Table S1 of the manuscript submi
 
 - `code/train_and_evaluate_naive_likeness.R`: clean implementation of the reported TMM/logCPM preprocessing, training-sample expression filter, elastic-net model, fitted scores, and sample-level five-fold out-of-fold evaluation.
 
-The clean training and evaluation code is included, but no fitted naive-likeness model is included in this local package. No model was refitted while assembling the package.
+The clean training and evaluation code is included, but no fitted naive-likeness model is included in this repository. No model was refitted while assembling the package.
 
 ## Input conventions
 

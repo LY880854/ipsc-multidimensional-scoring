@@ -1,0 +1,18 @@
+Figure 1b evaluation environment
+R 4.3.2
+CentOS Linux 7
+
+Core packages
+caret 6.0-94
+e1071 1.7-16
+glmnet 4.1-10
+lightgbm 4.6.0
+randomForest 4.7-1.2
+sva 3.50.0
+xgboost 3.0.5.1
+
+Supporting packages used for the recorded evaluation
+ggplot2 3.5.2
+Matrix 1.6-5
+edgeR 4.0.16
+limma 3.58.1

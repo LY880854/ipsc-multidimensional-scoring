@@ -1,0 +1,31 @@
+metric	direction	model	value	rank
+MAE	lower_is_better	Elastic Net	0.0136023372978093	4
+MAE	lower_is_better	LightGBM	0.0104484143742268	1
+MAE	lower_is_better	Random Forest	0.0131047642679036	3
+MAE	lower_is_better	SVM	0.0707721679341175	5
+MAE	lower_is_better	XGBoost	0.0122890844449365	2
+MSE	lower_is_better	Elastic Net	0.00037045774927238	2
+MSE	lower_is_better	LightGBM	0.000301448127336969	1
+MSE	lower_is_better	Random Forest	0.000436204448761645	3
+MSE	lower_is_better	SVM	0.00585652685582554	5
+MSE	lower_is_better	XGBoost	0.000606260026879728	4
+RMSE	lower_is_better	Elastic Net	0.0192472790095738	2
+RMSE	lower_is_better	LightGBM	0.0173622615847409	1
+RMSE	lower_is_better	Random Forest	0.0208855081039855	3
+RMSE	lower_is_better	SVM	0.0765279482008079	5
+RMSE	lower_is_better	XGBoost	0.024622348118726	4
+R_squared	higher_is_better	Elastic Net	0.997884156695778	2
+R_squared	higher_is_better	LightGBM	0.998278300283773	1
+R_squared	higher_is_better	Random Forest	0.997508649059179	3
+R_squared	higher_is_better	SVM	0.966550859961128	5
+R_squared	higher_is_better	XGBoost	0.996537388619861	4
+Pearson	higher_is_better	Elastic Net	0.998941586067332	2
+Pearson	higher_is_better	LightGBM	0.99913920550327	1
+Pearson	higher_is_better	Random Forest	0.998760203644826	3
+Pearson	higher_is_better	SVM	0.993257777098704	5
+Pearson	higher_is_better	XGBoost	0.998269826129584	4
+Spearman	higher_is_better	Elastic Net	0.974500610285339	4
+Spearman	higher_is_better	LightGBM	0.98239591736895	2
+Spearman	higher_is_better	Random Forest	0.974748290013784	3
+Spearman	higher_is_better	SVM	0.957343797260699	5
+Spearman	higher_is_better	XGBoost	0.982419958701332	1

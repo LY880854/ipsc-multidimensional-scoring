@@ -1,0 +1,10 @@
+dataset	path
+GSE69692	/path/to/GSE69692_raw_counts.csv
+GSE138304	/path/to/GSE138304_raw_counts.csv
+GSE174771	/path/to/GSE174771_raw_counts.csv
+GSE123055	/path/to/GSE123055_raw_counts.csv
+GSE159410	/path/to/GSE159410_4_ESC_counts_Entrez.csv
+GSE243416	/path/to/GSE243416_4_ESC_counts_Entrez.csv
+GSE263405	/path/to/GSE263405_6_ESC_counts_matrix.csv
+GSE85331	/path/to/GSE85331_4_ESC_counts_matrix.csv
+GSE99937	/path/to/GSE99937_4_ESC_counts_Entrez.csv

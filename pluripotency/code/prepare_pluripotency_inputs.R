@@ -113,15 +113,10 @@ labels <- utils::read.delim(
   check.names = FALSE,
   stringsAsFactors = FALSE
 )
-if (!"sample_id" %in% colnames(labels)) {
-  stop("LABEL_TSV must contain sample_id")
-}
-label_column <- if ("observed_label" %in% colnames(labels)) {
-  "observed_label"
-} else if ("routeA_label" %in% colnames(labels)) {
-  "routeA_label"
-} else {
-  stop("LABEL_TSV must contain observed_label or routeA_label")
+required_label_columns <- c("sample_id", "observed_label")
+missing_label_columns <- setdiff(required_label_columns, colnames(labels))
+if (length(missing_label_columns)) {
+  stop("Missing label columns: ", paste(missing_label_columns, collapse = ", "))
 }
 if (anyDuplicated(labels$sample_id) || !all(labels$sample_id %in% metadata$sample_id)) {
   stop("LABEL_TSV sample identifiers must be unique and present in the expression data")
@@ -148,7 +143,7 @@ prepared_table <- data.frame(
 output_metadata <- data.frame(
   sample_id = sample_order,
   group = if ("group" %in% colnames(labels)) labels$group else metadata$group[match(sample_order, metadata$sample_id)],
-  observed_label = as.numeric(labels[[label_column]]),
+  observed_label = as.numeric(labels$observed_label),
   check.names = FALSE
 )
 if ("fold" %in% colnames(labels)) {
